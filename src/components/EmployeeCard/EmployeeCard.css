@@ -8,6 +8,7 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
 .employee-card:hover {
@@ -43,6 +44,11 @@
   margin: 0;
   color: #888;
   font-size: 0.9rem;
+}
+.employee-card-link {
+  text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 @media (prefers-color-scheme: light) {

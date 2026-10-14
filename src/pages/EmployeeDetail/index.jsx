@@ -1,3 +1,4 @@
+import { useParams } from 'react-router-dom'
 import { getEmployeeById } from '../../data/employees'
 import './EmployeeDetail.css'
 
@@ -5,8 +6,7 @@ import './EmployeeDetail.css'
 // pour récupérer l'ID depuis l'URL. Pour l'instant, on affiche l'employé avec l'id 1.
 function EmployeeDetail() {
   // Dans le chapitre 2, cette ligne sera remplacée par :
-  // const { id } = useParams()
-  const id = 1
+  const { id } = useParams()
 
   const employee = getEmployeeById(parseInt(id))
 
